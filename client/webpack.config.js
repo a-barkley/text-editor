@@ -35,17 +35,9 @@ module.exports = () => {
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            destination: path.join('assets', 'icons')
           },
-          {
-            src: path.resolve('src/images/logo.png'),
-            size: '1024x1024' // you can also use the specifications pattern
-          },
-          {
-            src: path.resolve('src/images/logo.png'),
-            size: '1024x1024',
-            purpose: 'maskable'
-          }
         ]
       })
     ],
